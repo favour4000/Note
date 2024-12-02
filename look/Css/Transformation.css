@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    
+}
+
+.box {
+    background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 30px #f9f9f9;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 2rem;
+  max-width: 500px;
+  overflow: hidden;
+  transform: rotate(-5deg);
+  transition: transform .2s;
+
+}
+.bing p {
+    margin: 0;
+}
+
+.box:hover {
+    transform: rotate(0);
+}
+.bing, .lite {
+    padding: 2rem;
+}
+.lite {
+    align-items: center;
+    background: rgb(80, 180, 170);
+    background: linear-gradient(79deg, rgba(80,180,187) 0%, rgba(110, 200, 130, 1)100%);
+    color: aliceblue;
+    display: flex;
+    font-weight: bold;
+}
+.pics {
+    border-radius: 100%;
+    border: #fff;
+    height: 50px;
+    margin: 1.5rem;
+    transition: transform .3s;
+    width: 50px;
+}
+.box:hover .pics {
+    transform: scale(1.15);
+}
+@media screen  and (min-width:760){
+    .bing {
+        padding: 3rem;
+    }
+    .lite {
+        padding: 1rem 3rem;
+    }
+}
